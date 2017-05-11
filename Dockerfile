@@ -3,8 +3,8 @@ FROM ggotti/aem-base
 MAINTAINER ggotti
 
 #Copies required build media
-ONBUILD ADD cq-author-4502.jar /aem/cq-author-4502.jar
-ONBUILD ADD license.properties /aem/license.properties
+ONBUILD ADD cq-author-4502.jar https://storage.googleapis.com/aem-files/author-p4502.jar
+ONBUILD ADD license.properties https://storage.googleapis.com/aem-files/license.properties
 ONBUILD ADD https://raw.githubusercontent.com/ggotti/aem-author/master/postInstallHook.py /aem/postInstallHook.py
 
 # Extracts AEM
